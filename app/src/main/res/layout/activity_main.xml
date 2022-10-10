@@ -2,16 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:padding="30dp"
+        android:text="@string/question"
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,24 +22,34 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/true_button"
+            style="@android:style/Widget.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:text="@string/button_true"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#FFC107" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/false_button"
+            style="@android:style/Widget.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="@string/button_false"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#FFC107" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/next_button"
+        style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/button_next"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#7AE91E63" />
+
+
 
 </LinearLayout>
