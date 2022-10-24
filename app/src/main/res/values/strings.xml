@@ -3,6 +3,9 @@
     <string name="button_true">Prawda</string>
     <string name="button_false">Fałsz</string>
     <string name="button_next">Następne</string>
+    <string name="button_prompt">Podpowiedź</string>
+    <string name="showCorrectAnswerButton">Pokaz odpowiedz</string>
+    <string name="answer_was_shown">Odpowiedz byla juz wyswietlona </string>
 
     //pytania
 
